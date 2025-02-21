@@ -314,7 +314,7 @@
     <div class="hero-body">      <div class="columns is-centered has-text-centered">
         <div class="column">
           <h2 class="title is-3">Samples</h2>
-          <div class="publication-img">
+          <!-- <div class="publication-img">
             <img id="architecture" src="./static/images/datasample.png" style="width:500px; margin-top:10px;margin-bottom:10px;"/>
           </div>
           <div class="publication-img">
@@ -325,6 +325,20 @@
           </div>
           <div class="publication-img">
             <img id="architecture" src="./static/images/datasample4.png" style="width:500px; margin-top:10px;margin-bottom:10px;"/>
+          </div> -->
+          <div class="image-grid">
+            <div class="image-item">
+              <img src="./static/images/datasample.png" alt="Sample 1" style="width: 100%; margin-top: 10px; margin-bottom: 10px;" />
+            </div>
+            <div class="image-item">
+              <img src="./static/images/datasample2.png" alt="Sample 2" style="width: 100%; margin-top: 10px; margin-bottom: 10px;" />
+            </div>
+            <div class="image-item">
+              <img src="./static/images/datasample3.png" alt="Sample 3" style="width: 100%; margin-top: 10px; margin-bottom: 10px;" />
+            </div>
+            <div class="image-item">
+              <img src="./static/images/datasample4.png" alt="Sample 4" style="width: 100%; margin-top: 10px; margin-bottom: 10px;" />
+            </div>
           </div>
         </div>
       </div>
@@ -335,6 +349,25 @@
   </div>
 </section>
 
+<!-- 添加自定义样式 -->
+<!-- 添加自定义样式 -->
+<style>
+  /* Grid 布局 */
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 每行两个 */
+    gap: 20px; /* 图片之间的间距 */
+  }
+
+  /* 避免裁剪，保持图片比例 */
+  .image-item img {
+    width: 100%; /* 宽度占满父容器 */
+    height: auto; /* 高度自动调整，保持比例 */
+    display: block; /* 防止底部出现空白间隙 */
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+</style>
 <!-- /Results -->
 
 <!-- BibTeX -->
